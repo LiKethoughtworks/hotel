@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 
 namespace Hotel.Src
 {
@@ -26,12 +27,7 @@ namespace Hotel.Src
 
         public static List<string> Cheapest(IList<Hotel> hotels, List<Order> orders)
         {
-            List<string> cheapestHotelNames = new List<string>();
-            foreach (var order in orders)
-            {
-                cheapestHotelNames.Add(Cheapest(hotels, order));
-            }
-            return cheapestHotelNames;
+            return orders.Select(order => Cheapest(hotels, order)).ToList();
         }
 
         public static int GetCost(Hotel hotel, Order order)

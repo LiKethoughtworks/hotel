@@ -4,7 +4,7 @@ using Xunit;
 
 namespace Hotel.Test
 {
-    public class HotelSaverFact
+    public class AcceptanceTest
     {
         [Fact]
         public void should_get_the_cheapest_hotel()

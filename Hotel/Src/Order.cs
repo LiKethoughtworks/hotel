@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Hotel.Src
 {
@@ -11,28 +12,22 @@ namespace Hotel.Src
 
         public static List<Order> Parse(List<string> orders)
         {
-            List<Order> formattedOrders = new List<Order>();
-            foreach (var order in orders)
-            {
-                formattedOrders.Add(Parse(order));
-            }
-            return formattedOrders;
+            return orders.Select(Parse).ToList();
         }
 
         public static Order Parse(string order)
         {
             var infos = order.Split(':');
-            Order orderObject = new Order
+            var orderObject = new Order
                 {
                     CustomType = (CustomType)Enum.Parse(typeof(CustomType), infos[0])
-
                 };
             var days = infos[1].Split(',');
             foreach (var day in days)
             {
-                int start = day.IndexOf("(", StringComparison.Ordinal);
-                int end = day.IndexOf(")", StringComparison.Ordinal);
-                string parseDay = day.Substring(start + 1, end - start - 1);
+                var start = day.IndexOf("(", StringComparison.Ordinal);
+                var end = day.IndexOf(")", StringComparison.Ordinal);
+                var parseDay = day.Substring(start + 1, end - start - 1);
                 if (Date.IsWeekDay(parseDay))
                 {
                     orderObject.DayOfWeek++;
