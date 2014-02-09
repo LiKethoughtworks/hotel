@@ -1,0 +1,7 @@
+C:\workspace\HotelReservationLike\Hotel\bin\Debug\Hotel.exe
+C:\workspace\HotelReservationLike\Hotel\bin\Debug\Hotel.pdb
+C:\workspace\HotelReservationLike\Hotel\bin\Debug\xunit.dll
+C:\workspace\HotelReservationLike\Hotel\bin\Debug\xunit.xml
+C:\workspace\HotelReservationLike\Hotel\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\workspace\HotelReservationLike\Hotel\obj\x86\Debug\Hotel.exe
+C:\workspace\HotelReservationLike\Hotel\obj\x86\Debug\Hotel.pdb
