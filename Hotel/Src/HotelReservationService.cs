@@ -5,7 +5,24 @@ namespace Hotel.Src
 {
     public class HotelReservationService
     {
-        public static string Cheapest(IList<Hotel> hotels, Order order)
+        public string GetCheapestHotelName(IList<Hotel> hotels, string order)
+        {
+            var parseOrder = Order.Parse(order);
+            return Cheapest(hotels, parseOrder);
+        }
+
+        public List<string> GetCheapestHotelName(IList<Hotel> hotels, IList<string> orders)
+        {
+            var parseOrders = Order.Parse(orders);
+            return Cheapest(hotels, parseOrders);
+        }
+
+        public List<string> Cheapest(IList<Hotel> hotels, IList<Order> orders)
+        {
+            return orders.Select(order => Cheapest(hotels, order)).ToList();
+        }
+
+        private static string Cheapest(IEnumerable<Hotel> hotels, Order order)
         {
             Hotel minHotel = null;
             var min = 0;
@@ -23,11 +40,6 @@ namespace Hotel.Src
                 }
             }
             return minHotel.Name;
-        }
-
-        public static List<string> Cheapest(IList<Hotel> hotels, List<Order> orders)
-        {
-            return orders.Select(order => Cheapest(hotels, order)).ToList();
         }
 
         private static int GetCost(Hotel hotel, Order order)

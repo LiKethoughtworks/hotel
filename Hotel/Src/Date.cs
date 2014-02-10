@@ -4,8 +4,8 @@ namespace Hotel.Src
 {
     public class Date
     {
-        public static string[] Weekday = { "mon", "tues", "wed", "thur", "fri" };
-        public static string[] Weekend = { "sun", "sat" };
+        private static readonly string[] Weekday = { "mon", "tues", "wed", "thur", "fri" };
+        private static readonly string[] Weekend = { "sun", "sat" };
         public static bool IsWeekDay(string currentDay)
         {
             return Weekday.Contains(currentDay);

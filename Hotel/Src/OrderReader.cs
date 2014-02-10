@@ -3,7 +3,7 @@ using System.IO;
 
 namespace Hotel.Src
 {
-    public class FileReader
+    public class OrderReader
     {
         public static IEnumerable<string> GetWholeOrders(string filename)
         {

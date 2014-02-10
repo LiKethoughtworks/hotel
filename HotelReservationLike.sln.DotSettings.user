@@ -1,7 +1,37 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
-	<s:Boolean x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=58B1A9D103404D4AA6292543B034F2EE/@KeyIndexDefined">True</s:Boolean>
-	<s:String x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=58B1A9D103404D4AA6292543B034F2EE/Name/@EntryValue">should_get_order_by_parse</s:String>
-	<s:String x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=58B1A9D103404D4AA6292543B034F2EE/XmlSerializedElements/@EntryValue">&lt;Session&gt;&lt;Elements&gt;&lt;UnitTestElement Provider="xUnit" Id="xunit:83BACFC2-D6FC-48C0-9B18-FCE5B112FF7B:Hotel.Test.AcceptanceTest" type="XunitTestClassElement" projectId="83BACFC2-D6FC-48C0-9B18-FCE5B112FF7B" typeName="Hotel.Test.AcceptanceTest" /&gt;&lt;UnitTestElement Provider="xUnit" Id="xunit:83BACFC2-D6FC-48C0-9B18-FCE5B112FF7B:Hotel.Test.FileReaderFact" type="XunitTestClassElement" projectId="83BACFC2-D6FC-48C0-9B18-FCE5B112FF7B" typeName="Hotel.Test.FileReaderFact" /&gt;&lt;UnitTestElement Provider="xUnit" Id="xunit:83BACFC2-D6FC-48C0-9B18-FCE5B112FF7B:Hotel.Test.OrderFact" type="XunitTestClassElement" projectId="83BACFC2-D6FC-48C0-9B18-FCE5B112FF7B" typeName="Hotel.Test.OrderFact" /&gt;&lt;UnitTestElement Provider="xUnit" Id="xunit:83BACFC2-D6FC-48C0-9B18-FCE5B112FF7B:Hotel.Test.OrderFact.should_get_order_by_parse" ParentId="xunit:83BACFC2-D6FC-48C0-9B18-FCE5B112FF7B:Hotel.Test.OrderFact" type="XunitTestMethodElement" projectId="83BACFC2-D6FC-48C0-9B18-FCE5B112FF7B" typeName="Hotel.Test.OrderFact" methodName="should_get_order_by_parse" skipReason="" dynamic="False" /&gt;&lt;UnitTestElement Provider="xUnit" Id="xunit:83BACFC2-D6FC-48C0-9B18-FCE5B112FF7B:Hotel.Test.AcceptanceTest.should_get_the_cheapest_hotel" ParentId="xunit:83BACFC2-D6FC-48C0-9B18-FCE5B112FF7B:Hotel.Test.AcceptanceTest" type="XunitTestMethodElement" projectId="83BACFC2-D6FC-48C0-9B18-FCE5B112FF7B" typeName="Hotel.Test.AcceptanceTest" methodName="should_get_the_cheapest_hotel" skipReason="" dynamic="False" /&gt;&lt;UnitTestElement Provider="xUnit" Id="xunit:83BACFC2-D6FC-48C0-9B18-FCE5B112FF7B:Hotel.Test.FileReaderFact.should_get_whole_file_content" ParentId="xunit:83BACFC2-D6FC-48C0-9B18-FCE5B112FF7B:Hotel.Test.FileReaderFact" type="XunitTestMethodElement" projectId="83BACFC2-D6FC-48C0-9B18-FCE5B112FF7B" typeName="Hotel.Test.FileReaderFact" methodName="should_get_whole_file_content" skipReason="" dynamic="False" /&gt;&lt;/Elements&gt;&lt;/Session&gt;</s:String>
+	<s:Boolean x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=6481D86403394FEBBD09F1D3D352B181/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=6481D86403394FEBBD09F1D3D352B181/Name/@EntryValue">should_throw_ArgumentExpection_if_order_format_is_invalid</s:String>
+	<s:String x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=6481D86403394FEBBD09F1D3D352B181/XmlSerializedElements/@EntryValue">&lt;Session&gt;&lt;Elements&gt;&lt;UnitTestElement Provider="xUnit" Id="xunit:83BACFC2-D6FC-48C0-9B18-FCE5B112FF7B:Hotel.Test.OrderFact" type="XunitTestClassElement" projectId="83BACFC2-D6FC-48C0-9B18-FCE5B112FF7B" typeName="Hotel.Test.OrderFact" /&gt;&lt;UnitTestElement Provider="xUnit" Id="xunit:83BACFC2-D6FC-48C0-9B18-FCE5B112FF7B:Hotel.Test.OrderFact.should_throw_ArgumentExpection_if_order_format_is_invalid" ParentId="xunit:83BACFC2-D6FC-48C0-9B18-FCE5B112FF7B:Hotel.Test.OrderFact" type="XunitTestMethodElement" projectId="83BACFC2-D6FC-48C0-9B18-FCE5B112FF7B" typeName="Hotel.Test.OrderFact" methodName="should_throw_ArgumentExpection_if_order_format_is_invalid" skipReason="" dynamic="False" /&gt;&lt;/Elements&gt;&lt;/Session&gt;</s:String>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	<s:Boolean x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=AC0163B7B3E946E4BEF567690736853E/@KeyIndexDefined">True</s:Boolean>
 	<s:String x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=AC0163B7B3E946E4BEF567690736853E/Name/@EntryValue">should_get_whole_file_content</s:String>
 	<s:String x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=AC0163B7B3E946E4BEF567690736853E/XmlSerializedElements/@EntryValue">&lt;Session&gt;&lt;Elements&gt;&lt;UnitTestElement Provider="xUnit" Id="xunit:83BACFC2-D6FC-48C0-9B18-FCE5B112FF7B:Hotel.Test.FileReaderFact" type="XunitTestClassElement" projectId="83BACFC2-D6FC-48C0-9B18-FCE5B112FF7B" typeName="Hotel.Test.FileReaderFact" /&gt;&lt;UnitTestElement Provider="xUnit" Id="xunit:83BACFC2-D6FC-48C0-9B18-FCE5B112FF7B:Hotel.Test.FileReaderFact.should_get_whole_file_content" ParentId="xunit:83BACFC2-D6FC-48C0-9B18-FCE5B112FF7B:Hotel.Test.FileReaderFact" type="XunitTestMethodElement" projectId="83BACFC2-D6FC-48C0-9B18-FCE5B112FF7B" typeName="Hotel.Test.FileReaderFact" methodName="should_get_whole_file_content" skipReason="" dynamic="False" /&gt;&lt;/Elements&gt;&lt;/Session&gt;</s:String></wpf:ResourceDictionary>
