@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using Hotel.Src;
 using Xunit;
 
@@ -38,8 +39,8 @@ namespace Hotel.Test
             miamiHotels.Add(bridgeWood);
             miamiHotels.Add(ridgeWood);
 
-            List<string> orders = FileReader.GetWholeOrders(@"../../orders.txt");
-            List<Order> parseOrders = Order.Parse(orders);
+            var orders = FileReader.GetWholeOrders(@"../../orders.txt").ToList();
+            var parseOrders = Order.Parse(orders);
 
             var cheapestHotelName = MoneySaver.Cheapest(miamiHotels.GetHotels(), parseOrders);
             Assert.Equal("lakewood", cheapestHotelName[0]);
