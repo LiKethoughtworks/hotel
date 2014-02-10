@@ -10,9 +10,9 @@ namespace Hotel.Test
         {
             const string orderString = "Regular:16Mar2009(mon),17Mar2009(tues),18Mar2009(wed)";
             var order = Order.Parse(orderString);
-            Assert.Equal(order.CustomType, CustomType.Regular);
-            Assert.Equal(order.DayOfWeek, 3);
-            Assert.Equal(order.DayOfWeekend, 0);
+            Assert.Equal( CustomType.Regular, order.CustomType);
+            Assert.Equal(3, order.DayOfWeek);
+            Assert.Equal(0, order.DayOfWeekend);
         }
     }
 }

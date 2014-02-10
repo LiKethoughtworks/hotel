@@ -38,13 +38,13 @@ namespace Hotel.Test
             miamiHotels.Add(bridgeWood);
             miamiHotels.Add(ridgeWood);
 
-            List<string> orders = FileReader.GetWholeOrders(@"C:\Users\Administrator\Desktop\C4Sharp\src\C4Sharp.Test\test\orders.txt");
+            List<string> orders = FileReader.GetWholeOrders(@"../../orders.txt");
             List<Order> parseOrders = Order.Parse(orders);
 
             var cheapestHotelName = MoneySaver.Cheapest(miamiHotels.GetHotels(), parseOrders);
-            Assert.Equal(cheapestHotelName[0], "lakewood");
-            Assert.Equal(cheapestHotelName[1], "bridgewood");
-            Assert.Equal(cheapestHotelName[2], "ridgewood");
+            Assert.Equal("lakewood", cheapestHotelName[0]);
+            Assert.Equal("bridgewood", cheapestHotelName[1]);
+            Assert.Equal("ridgewood", cheapestHotelName[2]);
         }
     }
 }
