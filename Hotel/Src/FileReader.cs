@@ -7,8 +7,8 @@ namespace Hotel.Src
     {
         public static List<string> GetWholeOrders(string filename)
         {
-            List<string> orders = new List<string>();
-            using (StreamReader sr = new StreamReader(filename))
+            var orders = new List<string>();
+            using (var sr = new StreamReader(filename))
             {
                 string order;
                 while ((order = sr.ReadLine()) != null)

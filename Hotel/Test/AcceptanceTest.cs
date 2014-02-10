@@ -19,7 +19,6 @@ namespace Hotel.Test
                                .SetRewardWeekendkDayCost(80);
             lakeWood.Name = "lakewood";
 
-
             var bridgeWood =
                 new Src.Hotel().SetRating(4)
                                .SetRegularWeekDayCost(160)
@@ -40,7 +39,6 @@ namespace Hotel.Test
             miamiHotels.Add(ridgeWood);
 
             List<string> orders = FileReader.GetWholeOrders(@"C:\Users\Administrator\Desktop\C4Sharp\src\C4Sharp.Test\test\orders.txt");
-
             List<Order> parseOrders = Order.Parse(orders);
 
             var cheapestHotelName = MoneySaver.Cheapest(miamiHotels.GetHotels(), parseOrders);

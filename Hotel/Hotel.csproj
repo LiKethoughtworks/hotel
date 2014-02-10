@@ -56,7 +56,7 @@
     <Compile Include="Src\HotelFactory.cs" />
     <Compile Include="Src\MoneySaver.cs" />
     <Compile Include="Src\Order.cs" />
-    <Compile Include="Test\HotelSaverFact.cs" />
+    <Compile Include="Test\AcceptanceTest.cs" />
     <Compile Include="Test\OrderFact.cs" />
   </ItemGroup>
   <ItemGroup>
