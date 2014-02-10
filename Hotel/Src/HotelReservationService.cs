@@ -3,12 +3,12 @@ using System.Linq;
 
 namespace Hotel.Src
 {
-    public class MoneySaver
+    public class HotelReservationService
     {
         public static string Cheapest(IList<Hotel> hotels, Order order)
         {
             Hotel minHotel = null;
-            int min = 0;
+            var min = 0;
             foreach (var hotel in hotels)
             {
                 var cost = GetCost(hotel, order);
@@ -30,17 +30,13 @@ namespace Hotel.Src
             return orders.Select(order => Cheapest(hotels, order)).ToList();
         }
 
-        public static int GetCost(Hotel hotel, Order order)
+        private static int GetCost(Hotel hotel, Order order)
         {
             if (order.CustomType == CustomType.Regular)
             {
                 return order.DayOfWeek * hotel.GetRegularWeekDayCost() + order.DayOfWeekend * hotel.GetRegularWeekendDayCost();
             }
-            else
-            {
-                return order.DayOfWeek * hotel.GetRewardWeekDayCost() + order.DayOfWeekend * hotel.GetRewardWeekendDayCost();
-            }
+            return order.DayOfWeek * hotel.GetRewardWeekDayCost() + order.DayOfWeekend * hotel.GetRewardWeekendDayCost();
         }
-
     }
 }
