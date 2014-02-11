@@ -28,26 +28,20 @@ namespace Hotel.Src
             {
                 var start = day.IndexOf("(", StringComparison.Ordinal);
                 var dateTime = day.Substring(0, start);
-                //16Mar2009
-                const string format = "DDMMMyyyy";
-                var datetime = DateTime.ParseExact(dateTime, format, CultureInfo.CreateSpecificCulture("en-US"));
-
+                const string format = "ddMMMyyyy";
+                var specificCulture = CultureInfo.CreateSpecificCulture("en-US");
+                var datetime = DateTime.ParseExact(dateTime, format, specificCulture);
+                var datetimeDay = datetime.ToString("ddd", specificCulture);
                 var end = day.IndexOf(")", StringComparison.Ordinal);
                 var parseDay = day.Substring(start + 1, end - start - 1);
-                //date.week == parseDay
-                if (Date.IsWeekDay(parseDay))
-                {
-                    orderObject.DayOfWeek++;
-
-                }
-                else if (Date.IsWeekend(parseDay))
+                if(datetimeDay != parseDay)
+                    throw new ArgumentException();
+                if (parseDay == "sun" || parseDay == "sat")
                 {
                     orderObject.DayOfWeekend++;
+
                 }
-                else
-                {
-                    throw new ArgumentException();
-                }
+                orderObject.DayOfWeek++;
             }
             return orderObject;
         }

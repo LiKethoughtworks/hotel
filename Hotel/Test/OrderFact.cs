@@ -18,7 +18,7 @@ namespace Hotel.Test
             Assert.Equal(dayOfWeek, order.DayOfWeek);
             Assert.Equal(dayOfWeekend, order.DayOfWeekend);
         }
-        
+
         [Theory]
         [InlineData("Reward:26Mar2009(thur),27Mar2009(fri),28Mar2009(sat)", 2, 1)]
         public void should_get_reward_order_by_parse(string orderString, int dayOfWeek, int dayOfWeekend)
@@ -30,9 +30,9 @@ namespace Hotel.Test
         }
 
         [Theory]
-//        [InlineData("reh:26Mar2009(thur),27Mar2009(fri),28Mar2009(sat)")]
-//        [InlineData("Regular:26Mar2009(thuer),27Mar2009(fri),28Mar2009(sat)")] 
-        [InlineData("Regular:26Mar2009(mon),27Mar2009(fri),28Mar2009(sat)")]
+        [InlineData("reh:26Mar2009(thur),27Mar2009(fri),28Mar2009(sat)")]
+        [InlineData("Regular:26Mar2009(thuer),27Mar2009(fri),28Mar2009(sat)")] 
+        [InlineData("Regular:26Mar2009(mon),27Mar2009(fri),18Mar2009(sat)")]
         public void should_throw_ArgumentExpection_if_order_format_is_invalid(string orderString)
         {
             Assert.Throws<ArgumentException>(() => Order.Parse(orderString));

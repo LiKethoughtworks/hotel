@@ -52,7 +52,6 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Src\CustomType.cs" />
-    <Compile Include="Src\Date.cs" />
     <Compile Include="Src\MiamiHotel.cs" />
     <Compile Include="Src\OrderReader.cs" />
     <Compile Include="Test\OrderReaderFact.cs" />
