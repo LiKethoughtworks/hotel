@@ -7,11 +7,12 @@ namespace Hotel.Src
     {
         public List<string> GetCheapestHotelName(IList<Hotel> hotels, IList<string> orders)
         {
-            var parseOrders = Order.Parse(orders);
+            var order = new Order();
+            var parseOrders = order.Parse(orders);
             return Cheapest(hotels, parseOrders);
         }
 
-        private List<string> Cheapest(IEnumerable<Hotel> hotels, IEnumerable<Order> orders)
+        private static List<string> Cheapest(IEnumerable<Hotel> hotels, IEnumerable<Order> orders)
         {
             return orders.Select(order => Cheapest(hotels, order)).ToList();
         }

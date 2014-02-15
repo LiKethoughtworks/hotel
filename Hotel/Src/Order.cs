@@ -12,12 +12,12 @@ namespace Hotel.Src
         public int DayOfWeekend { get; set; }
         public CustomType CustomType { get; set; }
 
-        public static List<Order> Parse(IList<string> orders)
+        public List<Order> Parse(IList<string> orders)
         {
             return orders.Select(Parse).ToList();
         }
 
-        public static Order Parse(string order)
+        public  Order Parse(string order)
         {
             var infos = order.Split(':');
             var orderObject = new Order
