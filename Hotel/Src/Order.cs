@@ -40,7 +40,17 @@ namespace Hotel.Src
 
             var dateTime = day.Substring(0, start);
             var specificCulture = CultureInfo.CreateSpecificCulture("en-US");
-            var datetime = DateTime.ParseExact(dateTime, Format, specificCulture);
+            DateTime datetime;
+            try
+            {
+                datetime = DateTime.ParseExact(dateTime, Format, specificCulture);
+            }
+            catch (Exception)
+            {
+                
+                throw new ArgumentException();
+            }
+           
             var datetimeDay = datetime.ToString("ddd", specificCulture);
             var fullDateTimeDay = datetime.ToString("dddd", specificCulture);
 

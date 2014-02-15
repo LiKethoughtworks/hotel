@@ -7,3 +7,12 @@ C:\workspace\HotelReservationLike\Hotel\obj\x86\Debug\Hotel.exe
 C:\workspace\HotelReservationLike\Hotel\obj\x86\Debug\Hotel.pdb
 C:\workspace\HotelReservationLike\Hotel\bin\Debug\xunit.extensions.dll
 C:\workspace\HotelReservationLike\Hotel\bin\Debug\xunit.extensions.xml
+C:\hotel\Hotel\obj\x86\Debug\Hotel.exe
+C:\hotel\Hotel\obj\x86\Debug\Hotel.pdb
+C:\hotel\Hotel\bin\Debug\Hotel.exe
+C:\hotel\Hotel\bin\Debug\Hotel.pdb
+C:\hotel\Hotel\bin\Debug\xunit.dll
+C:\hotel\Hotel\bin\Debug\xunit.extensions.dll
+C:\hotel\Hotel\bin\Debug\xunit.xml
+C:\hotel\Hotel\bin\Debug\xunit.extensions.xml
+C:\hotel\Hotel\obj\x86\Debug\ResolveAssemblyReference.cache
