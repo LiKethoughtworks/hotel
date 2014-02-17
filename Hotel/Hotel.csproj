@@ -54,7 +54,6 @@
     <Compile Include="Src\CustomType.cs" />
     <Compile Include="Src\MiamiHotel.cs" />
     <Compile Include="Src\OrderReader.cs" />
-    <Compile Include="Test\OrderReaderFact.cs" />
     <Compile Include="Src\Hotel.cs" />
     <Compile Include="Src\HotelReservationService.cs" />
     <Compile Include="Src\Order.cs" />

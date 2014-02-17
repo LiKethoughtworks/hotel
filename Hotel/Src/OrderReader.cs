@@ -5,15 +5,12 @@ namespace Hotel.Src
 {
     public class OrderReader
     {
-        public static IEnumerable<string> GetWholeOrders(string filename)
+        public static IEnumerable<string> GetWholeOrders(TextReader textReader)
         {
-            using (var sr = new StreamReader(filename))
+            string order;
+            while ((order = textReader.ReadLine()) != null)
             {
-                string order;
-                while ((order = sr.ReadLine()) != null)
-                {
-                    yield return order;
-                }
+                yield return order;
             }
         }
     }
